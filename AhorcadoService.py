@@ -1,4 +1,4 @@
-from Repository import Repositorios
+""" from Repository import Repositorios
 from Partida import Partida
 from Persona import Persona
 
@@ -63,3 +63,4 @@ class AhorcadoService():
 
     def ver_partida_guardada(self):
         return Repositorios.partida
+ """

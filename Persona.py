@@ -1,4 +1,4 @@
-class Persona():
+""" class Persona():
     def __init__(self, nombre):
         self._nombre = nombre
     
@@ -7,4 +7,4 @@ class Persona():
         return self._nombre
     @nombre.setter
     def nombre(self, nombre):
-        self._nombre = nombre
+        self._nombre = nombre """

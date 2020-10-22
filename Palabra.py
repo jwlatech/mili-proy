@@ -18,11 +18,3 @@ class Palabra():
     @tipoPalabra.setter
     def tipoPalabra(self, tipoPalabra):
         self._tipoPalabra = tipoPalabra
-
-"""     @property
-    def letras(self):
-        return self._letras
-
-    @letras.setter
-    def letras(self, letras):
-        self._letras = letras """

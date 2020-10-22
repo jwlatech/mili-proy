@@ -1,4 +1,4 @@
-from palabraService import PalabraService
+""" from palabraService import PalabraService
 from Persona import Persona
 from Palabra import Palabra
 from AhorcadoService import AhorcadoService
@@ -67,3 +67,4 @@ if __name__ == "__main__":
                     else:
                         print(
                             "No eligio una opcion correcta, porfavor elija otra vez")
+ """
