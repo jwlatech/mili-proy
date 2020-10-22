@@ -119,7 +119,7 @@ class TestPartida(unittest.TestCase):
         for letra in letras:
             result_aux = servicePartida.intentar_letra(partida, letra)
         self.assertEqual(result_aux, result)
-
+a
     @parameterized.expand([
         (1, ['M', 'R', 'P', 'U', 'I', 'E', 'E', 'E'], 'Perdio')
     ])
