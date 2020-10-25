@@ -3,10 +3,10 @@ from Palabra import Palabra
 
 class Repositorios():
     palabrasList = [
-        Palabra("comida", "brownie"),
-        Palabra("comida", "milanesa"),
-        Palabra("famoso", "macri"),
-        Palabra("famoso", "alberto fernandez")
+        Palabra("tipo_palabra", "palabra"),
+        Palabra("tipo_palabra", "palabra1"),
+        Palabra("tipo_palabra", "palabra2"),
+        Palabra("tipo_palabra", "palabra3")
     ]
 
     partida = {}

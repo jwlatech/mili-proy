@@ -5,8 +5,8 @@ from unittest.mock import patch
 
 
 class TestAhorcado(unittest.TestCase):
-    """@parameterized.expand([
-     ('Claudio', 10, ['P', 'A', 'L', 'A', 'B', 'R', 'A','1', '2', '3'])
+    @parameterized.expand([
+     ('Claudio', 2, ['P', 'A', 'L', 'A', 'B', 'R', 'A','1', '2', '3'])
     ])
     # Inicial para un solo jugador, seleccionando la palabra aleatoriamente.
     # ingresa datos [nombre, dificultad, letras_para_adivinar]
@@ -19,7 +19,7 @@ class TestAhorcado(unittest.TestCase):
                                                   palabra[6], palabra[7],
                                                   palabra[8], palabra[9])):
             result = juego.un_jugador()
-            self.assertEqual(result, True)"""
+            self.assertEqual(result, True)
 
     @parameterized.expand([('Claudio', 1, ['a', 'b', 'salir'])])
     # Ingresando la palabra salir, se finaliza el juego

@@ -24,8 +24,14 @@ class ServicesPartidas():
         if(partida.intentos < 0):
             raise ValueError("Se acabaron los intentos")
         if(letra in partida.palabra):
-            index = self.get_letra_position(partida.palabra, letra)
-            partida.palabra_aciertos[index] = letra
+            #Usamos el metodo get_letras_position para encontrar todas las posiciones
+            #en la que encontramos la letra elegida.
+            posiciones_encontradas = self.get_letras_position(
+                partida.palabra, letra)
+            #Iteramos el array que contiene todas las posiciones encontradas
+            #para poder meter en esas posiciones la letra elegida.
+            for posicion_de_letra in posiciones_encontradas:
+                partida.palabra_aciertos[posicion_de_letra] = letra
         if (partida.intentos <= 0 and partida.palabra_aciertos != partida.palabra):
             return "Perdio"
         elif(partida.palabra_aciertos == partida.palabra):
@@ -33,9 +39,11 @@ class ServicesPartidas():
         else:
             return "Continua"
 
-    def get_letra_position(self, palabra, letra):
+    def get_letras_position(self, palabra, letra):
+        array_de_posiciones = []
         i = 0
         for letrita in palabra:
             if(letrita == letra):
-                return i
+                array_de_posiciones.append(i)
             i = i + 1
+        return array_de_posiciones
